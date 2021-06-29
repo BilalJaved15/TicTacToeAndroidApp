@@ -5,8 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal|center_vertical"
+    android:onClick="playerSwitchHandler"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/switch_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="Play With Computer" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <TextView
         android:id="@+id/txt_turn"
@@ -19,6 +32,7 @@
     <LinearLayout
         android:layout_width="140pt"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
         android:orientation="horizontal">
 
         <Button
@@ -54,6 +68,7 @@
     <LinearLayout
         android:layout_width="140pt"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
         android:orientation="horizontal">
 
         <Button
@@ -89,6 +104,7 @@
     <LinearLayout
         android:layout_width="140pt"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
         android:orientation="horizontal">
 
         <Button
@@ -116,8 +132,8 @@
             android:layout_marginStart="2pt"
             android:layout_marginLeft="2pt"
             android:layout_weight="1"
-            android:tag="button_2_2"
-            android:onClick="gameTileClickHandler" />
+            android:onClick="gameTileClickHandler"
+            android:tag="button_2_2" />
     </LinearLayout>
 
     <Button
@@ -125,6 +141,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8pt"
+        android:gravity="center_horizontal|center_vertical"
         android:onClick="btnResetClickHandler"
         android:tag="button_reset"
         android:text="Reset" />
