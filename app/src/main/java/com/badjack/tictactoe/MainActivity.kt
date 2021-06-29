@@ -70,16 +70,18 @@ class MainActivity : AppCompatActivity() {
                 status = 2
             }
         }
-        var count = 0
-        for (i in 0..2) {
-            for (j in 0..2) {
-                if (gameMatrix[i][j] == 1 || gameMatrix[i][j] == 2) {
-                    count++
+        if(status == -1) {
+            var count = 0
+            for (i in 0..2) {
+                for (j in 0..2) {
+                    if (gameMatrix[i][j] == 1 || gameMatrix[i][j] == 2) {
+                        count++
+                    }
                 }
             }
-        }
-        if (count == 9) {
-            status = 0
+            if (count == 9) {
+                status = 0
+            }
         }
     }
 
